@@ -1,8 +1,8 @@
 
-GET http://localhost:3001/api/persons
+GET http://localhost:3001/api/persons/1
 
 ###
-GET http://localhost:3001/api/persons?name_like=Ada
+GET http://localhost:3001/api/persons?name_like=Arto
 
 ###
 POST http://localhost:3001/api/persons/
@@ -11,4 +11,13 @@ Content-Type: application/json
 {
     "name": "John Doe",
     "number": "09322926010"
+}
+
+###
+PUT http://localhost:3001/api/persons/6190c953bfd02a2dd364e041
+Content-Type: application/json
+
+{   
+    "name": "Christian Jay L. Anunciado",
+    "number": 1234
 }
